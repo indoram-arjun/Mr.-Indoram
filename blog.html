@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Mr. Indoram</title>
+    <meta name="description" content="Read the latest articles and tutorials by Arjun Kumar on web development, programming tips, and industry insights.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-code text-primary me-2 fs-4"></i>
+                <span class="fw-bold fs-4">Mr. Indoram</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fw-bold" href="hiring.html">I'm Hiring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Blog & Insights</h1>
+                    <p class="lead">Sharing knowledge about web development, programming, and technology trends</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="card featured-article shadow-lg border-0">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                                     class="img-fluid h-100 object-fit-cover" alt="Featured Article">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card-body p-5">
+                                    <span class="badge bg-primary mb-3">Featured</span>
+                                    <h2 class="card-title fw-bold mb-3">
+                                        Building Scalable Web Applications with Modern JavaScript
+                                    </h2>
+                                    <p class="card-text text-secondary mb-4">
+                                        Learn how to architect and build scalable web applications using modern JavaScript 
+                                        frameworks, best practices for performance optimization, and strategies for 
+                                        maintaining clean, maintainable code as your application grows.
+                                    </p>
+                                    <div class="d-flex align-items-center mb-4">
+                                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                                             class="rounded-circle me-3" width="40" height="40" alt="Author">
+                                        <div>
+                                            <small class="fw-bold">Arjun Kumar</small><br>
+                                            <small class="text-muted">December 15, 2024 • 8 min read</small>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-primary">
+                                        <i class="fas fa-arrow-right me-2"></i>Read Full Article
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <button class="btn btn-outline-primary filter-btn active" data-filter="all">
+                            All Posts
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="javascript">
+                            JavaScript
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="react">
+                            React
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="nodejs">
+                            Node.js
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="tutorials">
+                            Tutorials
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="career">
+                            Career
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="react">
+                        <img src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="React Hooks">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-info me-2">React</span>
+                                <small class="text-muted">December 10, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    Mastering React Hooks: A Complete Guide
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Deep dive into React Hooks, from useState and useEffect to custom hooks. 
+                                Learn best practices and common patterns for modern React development.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>6 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="nodejs">
+                        <img src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Node.js API">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-success me-2">Node.js</span>
+                                <small class="text-muted">December 5, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    Building RESTful APIs with Node.js and Express
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Learn how to create robust, scalable REST APIs using Node.js and Express. 
+                                Covers authentication, validation, error handling, and best practices.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>10 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="javascript">
+                        <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="JavaScript ES6">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-warning me-2">JavaScript</span>
+                                <small class="text-muted">November 28, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    ES6+ Features Every Developer Should Know
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Explore modern JavaScript features including arrow functions, destructuring, 
+                                async/await, and modules that will improve your code quality.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>7 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="tutorials">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary me-2">Tutorial</span>
+                                <small class="text-muted">November 20, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    Complete Guide to Responsive Web Design
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Master responsive web design with CSS Grid, Flexbox, and media queries. 
+                                Create websites that look great on all devices.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>12 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="career">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Career Development">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-secondary me-2">Career</span>
+                                <small class="text-muted">November 15, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    How to Build a Successful Development Career
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Tips and strategies for advancing your career as a developer, from 
+                                building skills to networking and finding the right opportunities.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>9 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="react">
+                        <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="React Performance">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-info me-2">React</span>
+                                <small class="text-muted">November 8, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    React Performance Optimization Techniques
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Learn advanced techniques to optimize React applications including 
+                                memoization, code splitting, and virtual DOM optimization.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>11 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="tutorials">
+                        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Database Design">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary me-2">Tutorial</span>
+                                <small class="text-muted">October 30, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    Database Design Best Practices
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Learn how to design efficient, scalable databases. Covers normalization, 
+                                indexing, relationships, and performance optimization strategies.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>8 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="javascript">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="JavaScript Testing">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-warning me-2">JavaScript</span>
+                                <small class="text-muted">October 25, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    JavaScript Testing: Unit Tests to E2E
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Comprehensive guide to testing JavaScript applications using Jest, 
+                                React Testing Library, and Cypress for end-to-end testing.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>13 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Blog Post 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="card blog-card h-100 shadow-sm" data-category="career">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             class="card-img-top" alt="Remote Work">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-secondary me-2">Career</span>
+                                <small class="text-muted">October 18, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    Thriving as a Remote Developer
+                                </a>
+                            </h5>
+                            <p class="card-text text-secondary">
+                                Essential tips for succeeding as a remote developer including 
+                                communication, productivity, work-life balance, and team collaboration.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>7 min read
+                                </small>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <nav aria-label="Blog pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-3">Stay Updated</h2>
+                    <p class="lead text-secondary mb-4">
+                        Subscribe to my newsletter for the latest articles, tutorials, and insights 
+                        about web development and programming.
+                    </p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg" 
+                                   placeholder="Enter your email address" required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Subscribe
+                            </button>
+                        </div>
+                    </form>
+                    <small class="text-muted mt-3 d-block">
+                        No spam, unsubscribe at any time. I respect your privacy.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-code text-primary me-2"></i>Mr. Indoram
+                    </h5>
+                    <p class="text-light">
+                        Full Stack Web Developer passionate about creating exceptional digital experiences 
+                        and building high-performing development teams.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">More</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="hiring.html" class="text-light text-decoration-none">I'm Hiring</a></li>
+                        <li><a href="login.html" class="text-light text-decoration-none">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="mailto:arjunkumar73384@gmail.com" class="text-light text-decoration-none">
+                            arjunkumar73384@gmail.com
+                        </a>
+                    </p>
+                    <p class="text-light mb-3">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:12463566658" class="text-light text-decoration-none">
+                            +1 (246) 356-6658
+                        </a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 fs-5"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-light me-3 fs-5"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 Mr. Indoram. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light mb-0">Built with <i class="fas fa-heart text-danger"></i> using Bootstrap & jQuery</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

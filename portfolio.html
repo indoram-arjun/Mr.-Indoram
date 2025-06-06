@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mr. Indoram</title>
+    <meta name="description" content="Explore Arjun Kumar's portfolio of web development projects including e-commerce platforms, web applications, and innovative solutions.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-code text-primary me-2 fs-4"></i>
+                <span class="fw-bold fs-4">Mr. Indoram</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fw-bold" href="hiring.html">I'm Hiring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">My Portfolio</h1>
+                    <p class="lead">A showcase of my recent projects and technical expertise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <button class="btn btn-outline-primary filter-btn active" data-filter="all">
+                            All Projects
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="fullstack">
+                            Full Stack
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="frontend">
+                            Frontend
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="backend">
+                            Backend
+                        </button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="mobile">
+                            Mobile
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="fullstack">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="E-commerce Platform">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-primary">Full Stack</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">E-commerce Platform</h5>
+                            <p class="card-text text-secondary">
+                                Complete e-commerce solution with user authentication, payment processing, 
+                                inventory management, and admin dashboard.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-success me-1">Node.js</span>
+                                <span class="badge bg-dark me-1">MongoDB</span>
+                                <span class="badge bg-warning">Stripe</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2024
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="fullstack">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="Task Management App">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-primary">Full Stack</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Task Management App</h5>
+                            <p class="card-text text-secondary">
+                                Collaborative task management application with real-time updates, 
+                                team collaboration, and project tracking features.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-warning me-1">Socket.io</span>
+                                <span class="badge bg-secondary me-1">Express</span>
+                                <span class="badge bg-success">PostgreSQL</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2024
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="frontend">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="Analytics Dashboard">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-info">Frontend</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Analytics Dashboard</h5>
+                            <p class="card-text text-secondary">
+                                Interactive data visualization dashboard with real-time charts, 
+                                filters, and comprehensive reporting capabilities.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-danger me-1">Vue.js</span>
+                                <span class="badge bg-primary me-1">Chart.js</span>
+                                <span class="badge bg-success me-1">D3.js</span>
+                                <span class="badge bg-warning">Tailwind</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2023
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="backend">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="REST API">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-success">Backend</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">RESTful API Service</h5>
+                            <p class="card-text text-secondary">
+                                Scalable REST API with authentication, rate limiting, 
+                                comprehensive documentation, and microservices architecture.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">Node.js</span>
+                                <span class="badge bg-secondary me-1">Express</span>
+                                <span class="badge bg-dark me-1">MongoDB</span>
+                                <span class="badge bg-info">JWT</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2023
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-book me-1"></i>Docs
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="frontend">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="Portfolio Website">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-info">Frontend</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Portfolio Website</h5>
+                            <p class="card-text text-secondary">
+                                Responsive portfolio website with modern design, 
+                                smooth animations, and optimized performance.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-danger me-1">HTML5</span>
+                                <span class="badge bg-primary me-1">CSS3</span>
+                                <span class="badge bg-warning me-1">JavaScript</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2023
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="mobile">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="Mobile App">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-warning">Mobile</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">React Native App</h5>
+                            <p class="card-text text-secondary">
+                                Cross-platform mobile application with native performance, 
+                                offline capabilities, and push notifications.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info me-1">React Native</span>
+                                <span class="badge bg-primary me-1">Expo</span>
+                                <span class="badge bg-success me-1">Firebase</span>
+                                <span class="badge bg-dark">Redux</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2024
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-mobile-alt me-1"></i>Demo
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="fullstack">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="Social Media Platform">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-primary">Full Stack</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Social Media Platform</h5>
+                            <p class="card-text text-secondary">
+                                Full-featured social media platform with posts, comments, 
+                                real-time messaging, and user profiles.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-success me-1">Node.js</span>
+                                <span class="badge bg-warning me-1">Socket.io</span>
+                                <span class="badge bg-dark">MongoDB</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2024
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="backend">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="Microservices">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-success">Backend</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Microservices Architecture</h5>
+                            <p class="card-text text-secondary">
+                                Scalable microservices system with Docker containers, 
+                                API gateway, and service discovery.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">Node.js</span>
+                                <span class="badge bg-primary me-1">Docker</span>
+                                <span class="badge bg-info me-1">Kubernetes</span>
+                                <span class="badge bg-warning">Redis</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2023
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-book me-1"></i>Docs
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card project-card h-100 shadow-sm" data-category="frontend">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 class="card-img-top" alt="Landing Page">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-info">Frontend</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">SaaS Landing Page</h5>
+                            <p class="card-text text-secondary">
+                                High-converting SaaS landing page with modern design, 
+                                animations, and optimized conversion funnel.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-warning me-1">Framer Motion</span>
+                                <span class="badge bg-primary me-1">Tailwind</span>
+                                <span class="badge bg-success">Vercel</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="fas fa-calendar me-1"></i>2024
+                                </small>
+                                <div>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt me-1"></i>Live Demo
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-sm">
+                                        <i class="fab fa-github me-1"></i>Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-6 fw-bold">Technologies I Use</h2>
+                    <p class="lead text-secondary">The tools and frameworks that power my projects</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h5 class="fw-bold mb-3">Frontend</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-info">React</span>
+                            <span class="badge bg-danger">Vue.js</span>
+                            <span class="badge bg-warning">JavaScript</span>
+                            <span class="badge bg-primary">TypeScript</span>
+                            <span class="badge bg-secondary">HTML5</span>
+                            <span class="badge bg-success">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h5 class="fw-bold mb-3">Backend</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-success">Node.js</span>
+                            <span class="badge bg-warning">Python</span>
+                            <span class="badge bg-secondary">Express</span>
+                            <span class="badge bg-info">FastAPI</span>
+                            <span class="badge bg-primary">REST APIs</span>
+                            <span class="badge bg-dark">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h5 class="fw-bold mb-3">Database</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-dark">MongoDB</span>
+                            <span class="badge bg-primary">MySQL</span>
+                            <span class="badge bg-info">PostgreSQL</span>
+                            <span class="badge bg-warning">Redis</span>
+                            <span class="badge bg-success">Firebase</span>
+                            <span class="badge bg-secondary">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h5 class="fw-bold mb-3">Tools & Cloud</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-warning">AWS</span>
+                            <span class="badge bg-primary">Docker</span>
+                            <span class="badge bg-dark">Git</span>
+                            <span class="badge bg-info">Vercel</span>
+                            <span class="badge bg-success">Netlify</span>
+                            <span class="badge bg-secondary">Heroku</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold mb-3">Ready to Start Your Project?</h2>
+                    <p class="lead mb-0">
+                        Let's discuss how I can help bring your ideas to life with modern web technologies 
+                        and best practices.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="d-flex flex-column flex-lg-row gap-3">
+                        <a href="contact.html" class="btn btn-light btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Get In Touch
+                        </a>
+                        <a href="services.html" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-cogs me-2"></i>View Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-code text-primary me-2"></i>Mr. Indoram
+                    </h5>
+                    <p class="text-light">
+                        Full Stack Web Developer passionate about creating exceptional digital experiences 
+                        and building high-performing development teams.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">More</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="hiring.html" class="text-light text-decoration-none">I'm Hiring</a></li>
+                        <li><a href="login.html" class="text-light text-decoration-none">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="mailto:arjunkumar73384@gmail.com" class="text-light text-decoration-none">
+                            arjunkumar73384@gmail.com
+                        </a>
+                    </p>
+                    <p class="text-light mb-3">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:12463566658" class="text-light text-decoration-none">
+                            +1 (246) 356-6658
+                        </a>
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 fs-5"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-light me-3 fs-5"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 Mr. Indoram. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light mb-0">Built with <i class="fas fa-heart text-danger"></i> using Bootstrap & jQuery</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

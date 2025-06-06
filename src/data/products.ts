@@ -1,0 +1,130 @@
+import { Product } from '../types';
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Rainbow Building Blocks",
+    price: 29.99,
+    originalPrice: 39.99,
+    image: "https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&w=500",
+    category: "toys",
+    colors: ["red", "blue", "green", "yellow", "purple"],
+    rating: 4.8,
+    reviews: 124,
+    description: "Colorful wooden building blocks that spark creativity and imagination. Perfect for developing motor skills and spatial awareness.",
+    features: ["Non-toxic paint", "Smooth edges", "Educational", "Durable wood"],
+    ageRange: "2-6 years",
+    inStock: true
+  },
+  {
+    id: 2,
+    name: "Magical Art Set",
+    price: 24.99,
+    image: "https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&w=500",
+    category: "art",
+    colors: ["multicolor"],
+    rating: 4.9,
+    reviews: 89,
+    description: "Complete art set with crayons, markers, colored pencils, and drawing pad. Everything your little artist needs!",
+    features: ["Washable markers", "Non-toxic", "Carrying case", "Drawing tutorials"],
+    ageRange: "3-10 years",
+    inStock: true
+  },
+  {
+    id: 3,
+    name: "Superhero Cape Set",
+    price: 19.99,
+    image: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=500",
+    category: "clothing",
+    colors: ["red", "blue", "pink", "green"],
+    sizes: ["S", "M", "L"],
+    rating: 4.7,
+    reviews: 156,
+    description: "Transform into a superhero with this amazing cape and mask set. Perfect for imaginative play and dress-up time!",
+    features: ["Adjustable cape", "Comfortable mask", "Machine washable", "Durable fabric"],
+    ageRange: "3-8 years",
+    inStock: true
+  },
+  {
+    id: 4,
+    name: "Learning Tablet",
+    price: 49.99,
+    originalPrice: 69.99,
+    image: "https://images.pexels.com/photos/8613103/pexels-photo-8613103.jpeg?auto=compress&cs=tinysrgb&w=500",
+    category: "educational",
+    colors: ["blue", "pink"],
+    rating: 4.6,
+    reviews: 203,
+    description: "Interactive learning tablet with games, puzzles, and educational content. Screen-free learning fun!",
+    features: ["No screen time", "Educational games", "Durable design", "Volume control"],
+    ageRange: "2-5 years",
+    inStock: true
+  },
+  {
+    id: 5,
+    name: "Colorful Puzzle Set",
+    price: 15.99,
+    image: "https://images.pexels.com/photos/8613097/pexels-photo-8613097.jpeg?auto=compress&cs=tinysrgb&w=500",
+    category: "puzzles",
+    colors: ["multicolor"],
+    rating: 4.5,
+    reviews: 78,
+    description: "Set of 4 colorful puzzles with different difficulty levels. Great for problem-solving and patience building.",
+    features: ["4 different puzzles", "Varying difficulty", "Large pieces", "Storage box"],
+    ageRange: "3-7 years",
+    inStock: true
+  },
+  {
+    id: 6,
+    name: "Musical Instruments Set",
+    price: 34.99,
+    image: "https://images.pexels.com/photos/8613087/pexels-photo-8613087.jpeg?auto=compress&cs=tinysrgb&w=500",
+    category: "music",
+    colors: ["multicolor"],
+    rating: 4.8,
+    reviews: 92,
+    description: "Complete musical set with tambourine, maracas, triangle, and more. Perfect for little musicians!",
+    features: ["Multiple instruments", "Child-safe materials", "Carrying bag", "Music guide"],
+    ageRange: "2-8 years",
+    inStock: true
+  },
+  {
+    id: 7,
+    name: "Princess Dress-Up Kit",
+    price: 39.99,
+    image: "https://images.pexels.com/photos/8613066/pexels-photo-8613066.jpeg?auto=compress&cs=tinysrgb&w=500",
+    category: "clothing",
+    colors: ["pink", "purple", "blue"],
+    sizes: ["S", "M", "L"],
+    rating: 4.9,
+    reviews: 167,
+    description: "Beautiful princess dress with accessories including tiara, wand, and jewelry. Make every day magical!",
+    features: ["Complete outfit", "Sparkly accessories", "Comfortable fit", "Machine washable"],
+    ageRange: "3-8 years",
+    inStock: true
+  },
+  {
+    id: 8,
+    name: "Science Experiment Kit",
+    price: 44.99,
+    image: "https://images.pexels.com/photos/8613028/pexels-photo-8613028.jpeg?auto=compress&cs=tinysrgb&w=500",
+    category: "educational",
+    colors: ["multicolor"],
+    rating: 4.7,
+    reviews: 134,
+    description: "Safe and fun science experiments for curious minds. Includes everything needed for 20+ experiments!",
+    features: ["20+ experiments", "Safety equipment", "Instruction manual", "Educational"],
+    ageRange: "6-12 years",
+    inStock: true
+  }
+];
+
+export const categories = [
+  { id: 'all', name: 'All Products', icon: '🎯' },
+  { id: 'toys', name: 'Toys', icon: '🧸' },
+  { id: 'art', name: 'Art & Crafts', icon: '🎨' },
+  { id: 'clothing', name: 'Clothing', icon: '👕' },
+  { id: 'educational', name: 'Educational', icon: '📚' },
+  { id: 'puzzles', name: 'Puzzles', icon: '🧩' },
+  { id: 'music', name: 'Music', icon: '🎵' }
+];
